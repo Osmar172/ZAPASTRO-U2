@@ -1,0 +1,94 @@
+@import url(https://fonts.googleapis.com/css?family=Inconsolata);
+@font-face {
+  font-family: "Inconsolata";
+  src: url(../fonts/inconsolata.ttf);
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: "Inconsolata";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../img/PORFA.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    
+}
+.contenedor{
+    width: 100%;
+    padding: 15px;
+}
+.formulario{
+    background: #0000ff00;
+    margin-top: 150px;
+    padding: 3px;
+}
+h1{
+    text-align: center;
+    color: white;
+    font-size: 40px;
+}
+input[type="text"],input,input[type="password"]{
+    font-size: 20px;
+    width: 82%;
+    padding: 10px;
+    border: none;
+    
+}
+.input-contenedor{
+    margin-bottom: 15px;
+}
+.icon{
+    text-align: center center;
+    min-width: 50px;
+    color: white;
+    font-size: 22px;
+}
+.button{
+    border: none;
+    width: 100%;
+    color: white;
+    font-size: 25px;
+    background-color: #1a2537;;
+    padding: 15px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.button:hover{
+    background: cadetblue;
+}
+p{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+.link{
+    text-decoration: none;
+    color: #1a2537;
+    font-weight: 600;
+}
+.link:hover{
+    color: cadetblue;
+}
+@media(min-width:768px){
+    .formulario{
+        margin: auto;
+        margin-top: 70px;
+        width: 500px;
+        border-radius: 2px;
+
+
+    }
+}

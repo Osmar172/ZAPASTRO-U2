@@ -1,0 +1,340 @@
+@import url(https://fonts.googleapis.com/css?family=Inconsolata);
+@font-face {
+  font-family: "Inconsolata";
+  src: url(../fonts/inconsolata.ttf);
+}
+@font-face {
+  font-family: "Poppins";
+  src: url(../fonts/Poppins-Bold.ttf);
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: "Inconsolata";
+}
+h3{ font-size: 40px;}
+.main-header{
+    padding: 0 20px;
+}
+.main-header-titulo{
+    text-align: center;
+    font-size: 2.5em;
+    margin: 10px 0;
+    color: #454546;
+    font-family: "Poppins";
+}
+.main-header__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-header__link{
+    color: #333;
+}
+/*Estilos del menu*/
+.main-nav{
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+    z-index: 999999;
+}
+.menu{
+    position: absolute;
+    top: 180px;
+    left: 0;
+    background: #212121;
+    width: 100%;
+    list-style: none;
+    padding: 0px;
+    margin: 0;
+}
+.menu__item{
+    text-align: center;
+    margin: auto;
+}
+.menu__link{
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    display: block;
+}
+.menu__link:hover{
+    background: #F7F7F7;
+    color: #FF4E00;
+}
+.mostrar{
+    opacity: 1;
+    visibility: visible;
+}
+.icon-menu{
+    font-size: 1.5em;
+    border: 1px solid #454546;
+    display: block;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-left: auto;
+}
+.main-header__btn{
+    display: block;
+    padding: 10px 30px;
+    color: #454546;
+    border: 1px solid #454546;
+    text-decoration: none;
+}
+.main-header__input{
+    display: block;
+    padding: 10px;
+    width: 50%;
+}
+.main-header__container .main-header-texto{
+    font-size: .9em;
+    text-align: center;
+}
+.main{
+    padding: 0 20px;
+}
+button{
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 10px;
+    background-color: white;
+    cursor: pointer;
+    background-color: #3d3d3d;
+    padding:12px 40px;
+    text-decoration: none;
+    color:#fff;
+    font-size: 25px;
+    letter-spacing: 1.5px;
+    border: none;
+}
+button:hover{
+    background-color: #FF4E00;
+    color:#fff;
+}
+
+.container_M{
+    max-width: 1400px;
+    margin: auto;
+}
+
+#nuestros-servicios{
+    background-color: rgb(83, 83, 83);
+    color: white;
+    text-align: center;
+}
+
+#nuestros-servicios .container_M{
+    padding: 100px 5px;
+}
+
+#nuestros-servicios h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#nuestros-servicios p{
+    display: none;
+}
+
+#nuestros-servicios .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 30px;
+    border-radius: 15px;
+}
+/*FOOOOOOOTER*/
+.main__footer{
+    background: #151515;
+    color: white;
+    padding: 30px 20px;
+}
+.footer__titulo{
+    border-bottom: 1px dotted #555;
+    padding-bottom: 20px;
+}
+.footer__texto{
+    color: #555;
+}
+.footer__link{
+    color: #555;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+.footer__input{
+    background: #151515;
+    width: 100%;
+    display: block;
+    padding: 15px;
+    border: 1px solid #555;
+    color: white;
+    font-size: .8em;
+}
+.copy{
+    color: #555;
+}
+@media (min-width: 720px){
+    #nuestros-servicios .programas{
+        display: flex;
+        justify-content: center center;
+    }
+
+    #nuestros-servicios p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #nuestros-servicios h2{
+        font-size: 4em;
+    }
+
+    #nuestros-servicios h3{
+        margin-top: 0;
+    }
+
+    #nuestros-servicios .carta{
+        padding: 50px;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        background-color: rgba(50, 50, 50, 1);
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    }
+
+    .carta:first-child{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("../img/Cata_H.jpeg");
+
+    }
+
+    .carta:nth-child(2){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("../img/Niño.jpeg");
+    }
+
+    .carta:nth-child(3){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("../img/Cata_N.jpeg");
+
+    }
+}
+/*PARA TABLETTTTTTT*/
+@media screen and (min-width:768px){
+    .editor__item{
+        height: 250px;
+    }
+}
+/*PARA WEEEEEEEEEBBBBB*/
+@media screen and (min-width:1024px){
+    .container{
+        width: 1000px;
+        margin: auto;
+    }
+    .icon-menu{
+        display:none
+    }
+    .main-header .container--flex{
+        display: flex;
+        align-items: center;
+    }
+    .main-header__container{
+        padding-top: 10px;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        padding: 15px;
+    }
+    .main-header-titulo{
+        width: 100%;
+        font-size: 4em;
+        margin: 0px;
+        border-bottom: 1px solid #ccc;
+    }
+    .main-header__container:nth-child(2){
+        order: -1;
+        width: 25%;
+    }
+    .main-header__container:nth-child(3){
+        padding: 0 20px;
+        width: 25%;
+    }
+    .main-header__link{
+        margin-bottom: 20px;
+    }
+    .main-header__btn{
+        width: 130px;
+        padding: 10px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .main-header__input{
+        width: 85%;
+    }
+    .main-nav{
+        opacity: 1;
+        visibility: visible;
+        width: 100%;
+        margin-top: 20px;
+    }
+    .menu{
+        position: static;
+        display: flex;
+        background: none;
+        width: 100%;
+    }
+    .menu__link{
+        color:#333
+    }
+    .menu__link:hover{
+        background: white;
+    }
+
+/*FOOTER*/
+.main__footer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    height: 100%;
+}
+.copy{
+    grid-column-start: span 4;
+    text-align: center;
+}
+}
+@media screen and (min-width: 1280px) {
+.container {
+width: 1200px;
+}
+.main-header__container:nth-child(3) {
+padding-left: 60px;
+}
+.main-header__container:nth-child(2) {
+font-size: 1.3em;
+}
+}
+
+@media screen and (min-width: 1600px) {
+.container {
+width: 1500px;
+}
+.main-header__container:nth-child(3) {
+padding-left: 150px;
+}
+.main-header__container:nth-child(2) {
+font-size: 1.5em;
+}
+}
